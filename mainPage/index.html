@@ -1,0 +1,424 @@
+<!-- Programming Assignment 2
+    --- Term 4 Project ---
+    Group Members:
+        * Chadrack Boudzoumou
+        * Rusty Mabiala
+        * Mahad Hassan
+        * Joris Mabanzaboua -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>StudentQuery</title>
+    <!-- logo link in title bar -->
+    <link rel="icon" href="../img/logo.png" type="img/jpg">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesowe link -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap Core js/jQuery -->
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/search.js"></script>
+    <!-- Google font Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo1.png" class="w-25 imgBrand" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link text-light h5 mx-3">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light h5 mx-3">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light h5 mx-3">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-light h5 mx-3">About</a>
+                    </li>
+			    </ul>
+
+            <form class="form-inline ml-auto my-2 my-lg-0">
+                <input type="text" id="myFilter" class="form-control mr-sm-2" onkeyup="myFunction()" placeholder="Search for book">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+<!-- End of Navigation -->
+<!-- Header -->
+    <header class="bg-dark vHeight">
+        <div class="container-fluid p-5">
+            <div class="row p-5">
+                <div class="col-sm-12 col-md-12 col-lg-5">
+                    <h1 class="text-danger font-weight-bold display-4">STUDENT QUERY</h1>
+                    <P class="lead text-light text-justify h6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Provident, facilis rem! Reprehenderit distinctio, ex 
+                        praesentium quam repellat perspiciatis tenetur omnis 
+                        aliquam a dignissimos. Quasi voluptatem commodi sunt 
+                        maiores animi itaque.
+                    </P>
+                    <p class="lead text-light">FIND ALL QUERY ON THIS WEBSITE</p>
+                </div>
+                <!-- slides -->
+                <div class="col-sm-12 col-md-12 col-lg-7 slide-border">
+                        <div id="slide" class="carousel slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#slide" data-slide-to="0" class="active"></li>
+                            <li data-target="#slide" data-slide-to="1"></li>
+                            <li data-target="#slide" data-slide-to="2"></li>
+                          </ol>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="../img/slide2.jpg" class="d-block" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../img/slide3.jpg" class="d-block bg-gradient-secondary" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="../img/slide4.jpg" class="d-block" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                      </div>
+                <!-- slides end -->
+            </div>
+        </div>
+    </header>
+<!-- Header End -->
+<!-- Weather Widget -->
+    <a class="weatherwidget-io" href="https://forecast7.com/en/n33d9218d42/cape-town/" data-label_1="CAPE TOWN" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons" data-days="5" data-theme="marine" >CAPE TOWN WEATHER</a>
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+<!-- End of Weather -->
+<!-- Our Product -->
+    <hr class="w-50 mt-5">
+    <section class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 font-weight-bold">OUR PRODUCT</h1>
+                <p class="w-25 mx-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+            </div>
+            <div class="col text-center">
+                <i class="fas fa-book fa-3x mx-3 text-secondary"></i>
+                <i class="fas fa-university fa-3x mx-3 text-secondary"></i>
+                <i class="fas fa-book-reader fa-3x mx-3 text-secondary"></i>
+            </div>
+        </div>
+    </section>
+<!-- end of product -->
+
+    <!-- Items -->
+    <section class="container mt-5">
+        
+        <div class="row" id="myItems">
+            <div class="col-sm-12 mb-3">
+                <div class="card-deck">
+                    <div class="card my-4 mx-5">
+                        <img src="../img/product1.jpg" class="" alt="...">
+                        <div class="card-body">
+                         <h5 class="card-title"><a href="#">Learn Web Design</a></h5>
+                         <h6 class="card-subtitle mb-2 text-muted">A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics</h6>
+                        <p class="card-text">by Jennifer Robbins (Author)</p>
+                        <p class="text-danger font-weight-bold h4">$15.26</p>
+                        <a href="https://www.amazon.com/Non-Designers-Design-Book-4th/dp/0133966151/ref=sr_1_1?keywords=design+book&qid=1568818977&s=books&sr=1-1" target="_blank" class="btn btn-primary">Purchase</a>
+                        </div>
+                    </div>
+            
+                    <div class="card my-4 mx-5">
+                        <img src="../img/product2.jpg" class="" alt="...">
+                        <div class="card-body">
+                         <h5 class="card-title"><a href="#">The Designer Book</a></h5>
+                         <h6 class="card-subtitle mb-2 text-muted">A Beginner's Guide Design principals 4th Edition</h6>
+                        <p class="card-text">by Robin Williams (Author)</p>
+                        <p class="text-danger font-weight-bold h4">$30.48</p>
+                        <a href="https://www.amazon.com/Non-Designers-Design-Book-4th/dp/0133966151/ref=sr_1_1?keywords=design+book&qid=1568818977&s=books&sr=1-1" target="_blank" class="btn btn-primary">Purchase</a>
+                        </div>
+                    </div>
+            
+                    <div class="card my-4 mx-5">
+                        <img src="../img/product3.jpg" class="" alt="...">
+                        <div class="card-body">
+                         <h5 class="card-title"><a href="#">Learn Python</a></h5>
+                         <h6 class="card-subtitle mb-2 text-muted">A Beginner's Guide to HTML, CSS, JavaScript, and Web Graphics</h6>
+                        <p class="card-text">by Fabrizio Romano (Author)</p>
+                        <p class="text-danger font-weight-bold h4">$37.36</p>
+                        <a href="https://www.amazon.com/Learn-Web-Development-Python-hands-ebook/dp/B07KW5Z81T/ref=sr_1_8?crid=279WTJ8BK3IF6&keywords=web+development&qid=1568819010&s=books&sprefix=web+deve%2Cstripbooks-intl-ship%2C650&sr=1-8" target="_blank" class="btn btn-primary">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="card-deck">
+                <div class="card my-4 mx-5">
+                <img src="../img/product4.jpg" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#">Full Stack Developer</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Your Essential Guide to Modern Full Stack Web Developement</h6>
+                    <p class="card-text">by Chris Northwood (Author)</p>
+                    <p class="text-danger font-weight-bold h4">$27.24</p>
+                    <a href="https://www.amazon.com/Full-Stack-Developer-Essential-Everyday/dp/1484241517/ref=sr_1_15?crid=279WTJ8BK3IF6&keywords=web+development&qid=1568819010&s=books&sprefix=web+deve%2Cstripbooks-intl-ship%2C650&sr=1-15" target="_blank" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+                
+                <div class="card my-4 mx-5">
+                <img src="../img/product5.jpg" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#">Networking All-in-One</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Become a master in networking Learn the basic</h6>
+                    <p class="card-text">by Doug Lowe (Author)</p>
+                    <p class="text-danger font-weight-bold h4">$17.84</p>
+                    <a href="https://www.amazon.com/Networking-All-One-Dummies-Doug/dp/1119471605/ref=sr_1_1?keywords=networking&qid=1568819186&s=books&sr=1-1" target="_blank" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+                
+                <div class="card my-4 mx-5">
+                <img src="../img/product6.jpg" class="" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="#">Computer Networking</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">A Top-Down Approach (7th Edition)</h6>
+                    <p class="card-text">by James Kurose (Author)</p>
+                    <p class="text-danger font-weight-bold h4">$33.48</p>
+                    <a href="https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149/ref=sr_1_3?keywords=networking&qid=1568819186&s=books&sr=1-3" target="_blank" class="btn btn-primary">Purchase</a>
+                </div>
+                </div>
+            </div>
+
+          </div>    
+        </div>
+    </section>
+    <!-- end of Item -->
+   
+    <!-- Book Calculator -->
+    <section class="mt-4 mb-5">
+        <div class="row" id="myItems">
+            <!-- Book Calculator -->
+            <div class=" col-sm-8 col-md-8 col-lg-3 cal p-4">
+                <h4 class="font-weight-bold display-5">Book</h4>
+                <div class="input-group mb-3 w-100">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+                    </div>
+                    <input id="price" type="text" class="form-control" placeholder="Book Price">
+                </div>
+                <div class="input-group mb-3 w-50">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-sort-numeric-up"></i></span>
+                    </div>
+                    <input id="qty" type="text" class="form-control" placeholder="Qtty">
+                </div>
+                <p><input type="submit" class="btn btn-primary" value="Calculate" onclick="totalDiscount()"></p>
+                <p id="total" class="font-weight-bold h4 text-danger border rounded p-2"><span class="text-secondary">Total</span></p>
+            </div>
+            <!-- end of Book Calculator -->
+            <div class="col-sm-8 col-md-8 col-lg-3 p-4">
+                <div class="container px-5">
+                    <h4 class="font-weight-bold display-4">Currency Converter</h4>
+                    <div class="input-group mb-3 w-100">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-coins"></i></span>
+                        </div>
+                        <input id="money" type="text" class="form-control" placeholder="$Amount" name="amount">
+                    </div>
+                    <div class="form-check">
+                        <input id="c1" class="form-check-input" type="radio" name="amount">
+                        <label class="form-check-label">Dollar to Rand</label>
+                    </div>
+                    <div class="form-check">
+                        <input id="c2" class="form-check-input" type="radio" name="amount">
+                        <label class="form-check-label">Rand to Dollar</label>
+                    </div>
+                    <input type="submit" value="Convert" class="btn btn-primary mt-2" onclick="currencyConverter()">
+                    <p id="convert" class="font-weight-bold h4 text-danger mt-3 border rounded p-2"><span class="text-secondary">Total</span></p>
+                </div>
+            </div>
+            <!-- calculator -->
+            <div class="col-xs-12  col-sm-offset-4 col-sm-12  col-md-offset-3 col-md-6  col-lg-offset-3 col-lg-6">
+                <div>
+                    <form name="form" class="well calcontainer col-xs-12  col-sm-offset-4 col-sm-12  col-md-offset-3 col-md-6  col-lg-offset-3 col-lg-6 center-block">
+                        <!-- panel for the calc -->
+                        <input class=" form-control " id="panel" name="panel" placeholder="0." disabled><br/>
+                        <!-- User Input Buttons for the calc -->
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn7" value="7" onclick="calC(bttn7.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn8" value="8" onclick="calC(bttn8.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn9" value="9" onclick="calC(bttn9.value);">
+                        <input class="form-group btn btn-danger bttn" type="button" name="bttnplus" value="+" onclick="calC(bttnplus.value);"><br/>
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn4" value="4" onclick="calC(bttn4.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn5" value="5" onclick="calC(bttn5.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn6" value="6" onclick="calC(bttn6.value);">
+                        <input class="form-group btn btn-danger bttn" type="button" name="bttnminus" value="-" onclick="calC(bttnminus.value);"><br/>
+
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn1" value="1" onclick="calC(bttn1.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn2" value="2" onclick="calC(bttn2.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn3" value="3" onclick="calC(bttn3.value);">
+                        <input class="form-group btn btn-danger bttn" type="button" name="bttnmulti" value="*" onclick="calC(bttnmulti.value);"><br/>
+                        <input class="form-group btn btn-default bttn" type="button" name="bttndot" value="." onclick="calC(bttndot.value);">
+                        <input class="form-group btn btn-default bttn" type="button" name="bttn0" value="0" onclick="calC(bttn0.value);">
+                        <input class="form-group btn btn-danger bttn" type="button" name="bttnmod" value="%" onclick="calC(bttnmod.value);">
+                        <input class="form-group btn btn-danger bttn" type="button" name="bttndiv" value="/" onclick="calC(bttndiv.value);"><br/>
+                        <!-- calling new reset function -->
+                        <input class="form-group btn btn-info bttn bttne" type="button" name="bttnclear" value="CE" onclick="CE();">
+                        <input class="form-group btn btn-info bttn bttne" type="button" name="bttnEQL" value="=" onclick="panel.value=eval(panel.value);">
+                    </form>
+                    <div class="container">
+                        <p class="w-50 p-5 text-justify" style="position: absolute; left: 300px; bottom: 60px;">Lorem ipsum 
+                            dolor sit amet consectetur adipisicing elit. 
+                            Totam maxime dolorum aut aliquid fugiat atque repudiandae, 
+                            quam dicta inventore ab?<br> Lorem ipsum dolor sit amet consectetur
+                             adipisicing elit. Voluptatibus reprehenderit necessitatibus libero 
+                             rerum iure id ad dignissimos excepturi neque atque.</p>
+                    </div>
+                </div>
+            </div>
+             <!-- / end calculator -->
+        </div>
+    </section>
+<!-- End of calculator -->
+
+<!-- Team section -->
+    <section class="our-webcoderskull padding-lg">
+        <div class="container">
+          <div class="row heading heading-icon">
+              <h2>Our Team</h2>
+          </div>
+          <ul class="row">
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                  <figure><img src="../img/team1.jpg" class="img-responsive" alt=""></figure>
+                  <h3><a href="#">rusty</a></h3>
+                  <p>Freelance Web Developer</p>
+                  <ul class="follow-us clearfix">
+                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                  <figure><img src="../img/team4.jpg" class="img-responsive" alt=""></figure>
+                  <h3><a href="#">hassan</a></h3>
+                  <p>Freelance Web Developer</p>
+                  <ul class="follow-us clearfix">
+                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                  <figure><img src="../img/team2.jpg" class="img-responsive" alt=""></figure>
+                  <h3><a href="#">joris</a></h3>
+                  <p>Freelance Web Developer</p>
+                  <ul class="follow-us clearfix">
+                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+             </li>
+            <li class="col-12 col-md-6 col-lg-3">
+                <div class="cnt-block equal-hight" style="height: 349px;">
+                  <figure><img src="../img/team3.jpg" class="img-responsive" alt=""></figure>
+                  <h3><a href="#">chadrack</a></h3>
+                  <p>Freelance Web Developer</p>
+                  <ul class="follow-us clearfix">
+                    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+            </li>
+          </ul>
+        </div>
+    </section>
+<!-- End team section -->
+<!-- Footer -->
+<footer class="sticky-bottom">
+		<div class="row bg-dark height-50 p-5">
+			<div class="col-sm-12 col-md-4 col-lg-4 text-white">
+				<h3 class="font-weight-bold">Contact</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dolore, error fuga aliquid veniam sunt sequi natus suscipit
+                    corrupti eligendi similique debitis cumque, fugiat nesciunt
+                    assumenda.</p>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 text-white">
+				<h3 class="font-weight-bold">Services</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dolore, error fuga aliquid veniam sunt sequi natus suscipit
+                    corrupti eligendi similique debitis cumque, fugiat nesciunt
+                    assumenda.</p>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 text-white">
+				<h3 class="font-weight-bold">Connection</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Dolore, error fuga aliquid veniam sunt sequi natus suscipit
+                    corrupti eligendi similique debitis cumque, fugiat nesciunt
+                    assumenda.</p>
+                <div class="">    
+                    <a href="#"><i class="fab fa-facebook fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x mx-2"></i></a>
+                    <a href="#"><i class="fab fa-google fa-2x mx-2"></i></a>
+                </div>
+			</div>
+        </div>
+        <div class="row bg-info">
+            <div class="container">
+                <p class="text-center text-white pt-2 align-content-center">All right reserved © copyright 2019</p>
+            </div>
+        </div>
+	</footer>
+<!-- Footer end -->
+</body>
+</html>
+<!-- End of Code -->
+<!-- Copyright © 2019-->

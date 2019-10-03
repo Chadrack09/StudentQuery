@@ -1,0 +1,83 @@
+<!-- Programming Assignment 2
+    --- Term 4 Project ---
+    Group Members:
+        * Chadrack Boudzoumou
+        * Rusty Mabiala
+        * Mahad Hassan
+        * Joris Mabanzaboua -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="welcom_css_js/style3.css">
+    <link rel="icon" href="img/logo.png" type="img/jpg">
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- end script -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.css">
+</head>
+<body>
+        <h2>Welcome to Student Query</h2>
+        <div class="container" id="container">
+            <!-- Sign Up -->
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your email for registration</span>
+                    <input type="text" placeholder="Name" id="registerName" required />
+                    <input type="password" placeholder="Password" id="registerPassword" required/>
+                    <button onclick="showpw1()" style="margin: 10px"><i class="fas fa-eye fa-1x"></i></button>
+                    <button id="signUp1">Sign Up</button>
+                </form>
+            </div>
+            <!-- end Sign Up -->
+            <!-- Sign In -->
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="text" placeholder="Name" id="loginName" required />
+                    <input type="password" placeholder="Password" id="loginPassword" required />
+                    <button onclick="showpw2()" style="margin: 10px"><i class="fas fa-eye fa-1x"></i></button>
+                    <!-- <a href="#">Forgot your password?</a> -->
+                    <button id="signIn1" class="text-white">Sign In</button>
+                </form>
+            </div>
+            <!-- end Sign In -->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>To keep connected with us please signIn with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, we welcome you</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- script -->
+        <script src="welcom_css_js/script.js"></script>
+</body>
+</html>
