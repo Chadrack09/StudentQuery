@@ -2,7 +2,7 @@
 This web app was deployed on [Netlify](https://studentquery.netlify.app/mainpage/).
 
 ```
-There are composed of three apps
+It is composed of three apps
     1. Search Book app
     2. Calculator
     3. Currency Converter
@@ -47,7 +47,7 @@ function totalDiscount(){
 ```
 
 ## 3. Currency Converter
-> This is a static currency converter from dollor to rand. Note this currency is static according to the day of its records.
+> This is a static currency converter from dollar to rand. Note this currency is static according to the day of its records.
 
 ```javascript
 // Currency Converter Function
